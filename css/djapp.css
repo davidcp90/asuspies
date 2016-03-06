@@ -1,0 +1,146 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+  #main-container{
+    margin-top: 17px;
+  }
+  #main-content{
+    border-right: 1px solid #999;
+  }
+  #sidebar{
+    margin-top: 20px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .list-group{
+    margin-top: -20px;
+  }
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    background-color: #ffffff;
+    border: 0;
+    border-left: 3px solid #ffffff;
+    transition: all 0.2s ease-in;
+  }
+  .list-group-item:hover {
+    background-color: #ffffff;
+    border: 0;
+    color: #999999;
+    border-left: 3px solid #999999;
+  }
+  #sidebar .active {
+    background-color: #ffffff;
+    border: 0;
+    color: #2780e3;
+    border-left: 3px solid #2780e3;
+  }
+
+
+
+}
+.navbar-default{
+    color: #fff;
+    min-height: 86px;
+  }
+  #logo{
+    display: inline-block;
+  }
+.navbar-brand{
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+.navbar-toggle{
+  margin-top: 24px;
+}
+.contact-card{
+  min-height: 170px;
+  max-height: 170px;
+}
+.tab-content{
+  border: 1px solid #dddddd !important;
+  border-top: 0 !important;
+}
+.navigation-no-r{
+  background: transparent;
+  margin-top: 10px;
+  list-style-type: none; 
+}
+.navigation-no-r li{
+  padding: 10px;
+  color: white;
+}
+.navigation-no-r li a{
+  padding: 10px;
+  color: white;
+}
+#menu-nor{
+  position: relative;
+  top: 15px;
+}
+#menu-nor li{
+  border-radius: 5px;
+}
+.img-circle{
+  max-width: 128px !important;
+  max-height: 128px !important;
+}

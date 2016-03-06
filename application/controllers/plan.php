@@ -1,0 +1,23 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Plan extends CI_Controller {
+
+	function __construct()
+	{
+		parent::__construct();
+		
+		$this->load->database();}
+
+		function index()
+		{
+			$data['title']="Lo que creemos";
+			$this->load->helper(array('form'));
+			$this->load->view('front_templates/header', $data);
+			$this->load->view('plan',$data);
+			$this->load->view('front_templates/footer', $data);
+		}	
+
+
+
+		}
+	

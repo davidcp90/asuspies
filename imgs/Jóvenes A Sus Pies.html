@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://192.168.33.22/asuspies/index.php/asuspies/lista -->
+<html lang="en" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title>Jóvenes A Sus Pies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="http://192.168.33.22/asuspies/dist/img/favicon.png">
+    <link href="./Jóvenes A Sus Pies_files/css" rel="stylesheet" type="text/css">
+    <link href="./Jóvenes A Sus Pies_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Jóvenes A Sus Pies_files/bootstrap.css" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://192.168.33.22/asuspies/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="http://192.168.33.22/asuspies/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Jóvenes A Sus Pies_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Jóvenes A Sus Pies_files/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="./Jóvenes A Sus Pies_files/angular.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="transit" src="./Jóvenes A Sus Pies_files/transit.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parsley" src="./Jóvenes A Sus Pies_files/parsley.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./Jóvenes A Sus Pies_files/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="init_dom" src="./Jóvenes A Sus Pies_files/init_dom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="controllers" src="./Jóvenes A Sus Pies_files/controllers.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services" src="./Jóvenes A Sus Pies_files/services.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="./Jóvenes A Sus Pies_files/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-route" src="./Jóvenes A Sus Pies_files/angular-route.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angularAMD" src="./Jóvenes A Sus Pies_files/angularAMD.min.js"></script></head>
+  <body ng-controller="ListaAsuspiesController" style="background: black !important;" class="ng-scope">
+    <div class="col-xs-12" id="thanks">
+      <div class="text-center" id="head-title" style="visibility: hidden"><img src="./Jóvenes A Sus Pies_files/logo_h.png" alt="Jovenes a sus pies" class="img-responsive"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Camilo Rubio</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/6.png" src="./Jóvenes A Sus Pies_files/6.png" style="
+    width:  30%;
+    display:  inline-block;
+">Logistica</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/7.png" src="./Jóvenes A Sus Pies_files/7.png">Actividades</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Carubio44@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 3199116 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 04/12/87</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">David Camargo</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Davidcp90@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 3576613 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 8 de mayo de 1990</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">María Alejandra Rodríguez Gutiérrez </h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">alejandra.rod.gut@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 3906058 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 21 diciembre 1990</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Jose David Diaz</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/6.png" src="./Jóvenes A Sus Pies_files/6.png">Logistica</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">josedavid2diaz@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 5262954 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 1995/12/25</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Sebastian Gonzalez</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/3.png" src="./Jóvenes A Sus Pies_files/3.png">Evangelismo</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">sgonzalezg24@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4975592 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 24/03/1996</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Lesly dayanna acosta cruz</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Leslyacosta94@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 6044049 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 20/06/2000</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Sara valentina gonzalez gutierez </h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Zaristar6@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4975592 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> Agosto 6 2002</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Daniela Peña Rodriguez</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/5.png" src="./Jóvenes A Sus Pies_files/5.png">Oración</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">dani100pe@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4587673 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> Mayo 4 de 1998</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Juliana Tolosa Rocha  </h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Julianatr97@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4638930 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 11 octubre</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Miguel Ángel Salazar Martinez</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/6.png" src="./Jóvenes A Sus Pies_files/6.png">Logistica</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Miguelangel697@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 5361007 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 23 de febrero de 1996</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Angela Patricia Pinzon Rivera</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">angelitapinzo98@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 0 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 7 Enero 1998</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Angela Patricia Pinzon Rivera</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">angelitapinzo98@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 0 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 7 Enero 1998</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Angela Patricia Pinzon Rivera</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">angelitapinzo98@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 0 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 7 Enero 1998</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Angela Patricia Pinzon Rivera</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">angelitapinzo98@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 0 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 7 Enero 1998</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Camila mayorquin</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Camilamayorquin@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4331098 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 10 Diciembre 1991</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Diego Alejandro Cifuentes Gutierrez</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/7.png" src="./Jóvenes A Sus Pies_files/7.png">Actividades</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">ordnajel7530@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 3223589 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 22 de Marzo de 1997</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Laura daniela rincon</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/6.png" src="./Jóvenes A Sus Pies_files/6.png">Logistica</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Laurarincon12_@outlook.es</p>
+                  <p class="ng-binding"><em>Tel :</em> 6790094 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 6-12</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Esteban alvarez </h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">alvarez.esteban.007@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 7042374 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> Enero 20 1996</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Christian Felipe Orjuela</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/4.png" src="./Jóvenes A Sus Pies_files/4.png">Enseñanza</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Christianfor@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 6888431 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 16 /  06 / 96 </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Daniela Tolosa Rocha</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">danielatolosa21@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4638930 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 2 de abril de 1999</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Diana Mabel Rueda Paramo</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/5.png" src="./Jóvenes A Sus Pies_files/5.png">Oración</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/6.png" src="./Jóvenes A Sus Pies_files/6.png">Logistica</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Diani_rueda@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 2147483647 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 22 marzo 1990</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Angie Lorena Suarez</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/5.png" src="./Jóvenes A Sus Pies_files/5.png">Oración</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Suspiro6@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 5381613 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 10-05 1994</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">0</h3>
+                  <!-- ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">0</p>
+                  <p class="ng-binding"><em>Tel :</em> 0 - <em>Cel :</em> 0</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 0</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">juandiego poneda zorro</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/6.png" src="./Jóvenes A Sus Pies_files/6.png">Logistica</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">juandiegofox1701@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 4689992 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 17 mayo 2001</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Giovanny Andrés Puentes Rocha</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/5.png" src="./Jóvenes A Sus Pies_files/5.png">Oración</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">gaprsimbol@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 6690672 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 06/12/95</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Tatiana Córtes Hernández </h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/3.png" src="./Jóvenes A Sus Pies_files/3.png">Evangelismo</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Tata_ch123@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 3005364 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 09/03/96</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Tatiana Córtes Hernández </h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/3.png" src="./Jóvenes A Sus Pies_files/3.png">Evangelismo</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/1.png" src="./Jóvenes A Sus Pies_files/1.png">Alabanza</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Tata_ch123@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 3005364 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 09/03/96</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Valentina Gutierrez</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/8.png" src="./Jóvenes A Sus Pies_files/8.png">Artes y comunicaciones</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">Valegm1999@hotmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 8855907 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 13 / 04 / 1999</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --><members ng-repeat="m in members" class="ng-scope">
+          <div class="col-xs-12 col-sm-4 panel panel-default people-card">
+            <div class="panel-body panel-height">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <!-- ngIf: m.photos -->
+                  <div class="post-img-cont" style="background-image: url(&#39;http://192.168.33.22/asuspies/imgs/nophoto.png&#39;) !important;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 break-word text-right">
+                  <h3 class="ng-binding">Juan Camilo Gomez Posada</h3>
+                  <!-- ngIf: m.first_committee>0 --><h4 ng-if="m.first_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/4.png" src="./Jóvenes A Sus Pies_files/4.png">Enseñanza</h4><!-- end ngIf: m.first_committee>0 -->
+                  <!-- ngIf: m.second_committee>0 --><h4 ng-if="m.second_committee&gt;0" class="ng-binding ng-scope"><img class="img-responsive" ng-src="http://192.168.33.22/asuspies/images/comites/2.png" src="./Jóvenes A Sus Pies_files/2.png">Pastoreo y Discipulado</h4><!-- end ngIf: m.second_committee>0 -->
+                  </div>
+                </div>
+                <div class="col-xs-12 text-right push-top-20">
+                  <p class="ng-binding">junacho29@gmail.com</p>
+                  <p class="ng-binding"><em>Tel :</em> 5555555 - <em>Cel :</em> 2147483647</p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> 5/29/1994</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#personCard" ng-click="showAll(m);">Ver ficha completa <i class="fa fa-hand-o-right"> </i></button>
+            </div>
+          </members><!-- end ngRepeat: m in members --></div>
+          <div class="clearfix visible-xs-block"></div>
+          
+        </div>
+      </div>
+    
+    <div class="clearfix"></div>
+  
+  <div class="modal fade" id="personCard" tabindex="-1" role="dialog" aria-labelledby="personCard">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header"></div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-xs-4">
+                <!-- ngIf: member.photo -->
+                  <!-- ngIf: !member.photo --><div class="post-img-cont ng-scope" ng-if="!member.photo"></div><!-- end ngIf: !member.photo -->
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="ng-binding"></h3>
+                  <p class="ng-binding"></p>
+                  <p class="ng-binding"><em>Tel :</em>  - <em>Cel :</em> </p>
+                  <p class="ng-binding"><em>Cumpleaños:</em> </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+  <script src="./Jóvenes A Sus Pies_files/require.js" data-main="http://192.168.33.22/asuspies/js/main.js">    </script>
+
+</body></html>

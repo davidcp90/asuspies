@@ -1,0 +1,274 @@
+//imports
+@import "http://fonts.googleapis.com/css?family=Rambla:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700";
+@import "http://fonts.googleapis.com/css?family=Quintessential";
+//font-family: 'Libre Baskerville', serif;
+//color scheme
+//@beige:#E8E2D9;
+@beige:#F0EAE0;
+@red:#B13F3A;
+@green:#A9B18D;
+@swhite:#F9F2E6;
+@blue:#6A7689;
+@bluep:#3989b1;
+@orangep:#b17339;
+@purplep:#b1397b;
+@greenp:#39b14b;
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Rambla', sans-serif;
+}
+.effect(@property,@time,@type){
+	transition:@property @time @type;
+-moz-transition:@property @time @type; /* Firefox 4 */
+-webkit-transition:@property @time @type; /* Safari and Chrome */
+-o-transition:@property @time @type; /* Opera */
+}
+//mixins
+.imagebg(@imagen,@position,@color,@size,@height,@pad){
+	background: url(@imagen) no-repeat scroll @position transparent;
+    color: @color;
+    display: inline-block;
+    float: left;
+    .effect(background,2.5s,ease-in);
+    .effect(color,1s,ease-out);
+    font-size: @size;
+    height: @height;
+    padding: @pad;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+//rules
+body{
+	background:@swhite;
+	font-family: 'Rambla', sans-serif;
+	
+}
+.vistit{
+	color:@swhite;
+}
+#reuniones li a{
+	color:@swhite;
+}
+#reuniones li{
+	color:@swhite;
+}
+#reuniones{
+	color:@swhite;
+}	
+
+.top-bar{
+	background:@beige;
+
+}
+.contain-to-grid{
+	background:@beige;
+	-webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.45);
+-moz-box-shadow:    0px 3px 10px rgba(50, 50, 50, 0.45);
+box-shadow:         0px 3px 10px rgba(50, 50, 50, 0.45);
+}
+.top-bar ul > li a:not(.button) {
+	color:@blue;
+	font-size:18px !important;
+	margin-top:17px;
+
+	}
+.top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active, .top-bar ul > li:not(.name):focus {
+ background:@blue;
+ 
+ border-radius: 0 0 15px 15px;
+}.top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a, .top-bar ul > li:not(.name):focus a { color:#ffffff; }
+.mision{
+	background:@red;
+	color:#fff;
+}
+.verde{
+	background:@green;
+	color:#fff;border-radius:15px;
+}
+.azul{
+	background:@blue;
+	color:#ffffff; border-radius:15px;
+}
+.verde h4,.azul h4{
+	color:@swhite;
+}
+.contact{
+	color:@blue;
+}
+.panel h4,.verde h5 a,.cool_title,.contact{
+	font-family: 'Rambla', sans-serif;
+	
+}
+hr {
+	margin: 9px 0 8px;
+}
+hr.strong_hr {
+border-width: 2px 0 0;
+}
+.verde h5 a{
+color:#fff;
+	}
+.mision h2{
+	color:@swhite;
+	font-family: 'Rambla', sans-serif;
+}
+#reflexiones{
+	margin-bottom:20px;
+}
+//colorexperiments
+.col1:hover{
+background:#3b5898;
+}
+.col2:hover{
+background:#e46464;
+}
+.col3:hover{
+	background:#f26109;
+}
+.col4:hover{
+	background:#00acee;
+}
+.col5:hover{
+	background:#00F0B8;
+}
+@media only screen and (min-width: 960px) {
+#first{
+	background:@bluep;
+	color:#fff;
+	text-align: center;
+}
+#second{
+	background:@red;
+	color:#fff;
+	text-align: center;
+}
+#third{
+	background:@greenp;
+	color:#fff;
+	text-align: center;
+}
+#four{
+	background:@orangep;
+	color:#fff;
+	text-align: center;
+}
+.law{
+	font-family: 'Rambla', sans-serif;
+	color:white;
+	font-size:28px;
+	line-height: 1.5em;text-align: center;
+}
+ #heart { position: relative; width: 100px; height: 90px; margin:10px auto; } 
+ #heart:before, #heart:after { position: absolute; content: ""; left: 50px; top: 0; width: 50px; height: 80px; 
+ background: @swhite; -moz-border-radius: 50px 50px 0 0; border-radius: 50px 50px 0 0; -webkit-transform: rotate(-45deg); 
+ -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); 
+ -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; 
+ transform-origin: 0 100%; } #heart:after { left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); 
+ 	-ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transform-origin: 100% 100%; 
+ 	-moz-transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -o-transform-origin: 100% 100%; transform-origin :100% 100%; }
+ .imglaw {
+  margin:10px auto;
+  clear:both;
+}
+.topspace{
+	margin-top:80px;
+	
+}
+.topspace p{
+	font-size:16px;
+}
+#start{
+	font-size:22px;
+}
+h1#logo a{
+	position:relative;
+	top:-10px;
+	font-family: 'Oswald', sans-serif;
+	font-size:22px;
+	width:110px;
+	height:70px;
+	color:#111;
+	text-decoration:none;
+	background:url('../images/oldfashion.png') no-repeat left center;
+	float:left;
+	text-indent: -9999px;
+	display:inline-block;
+transition: background 2.5s ease-in-out;
+-moz-transition: background 2.5s ease-in-out;
+-ms-transition: background 2.5s ease-in-out;
+-webkit-transition: background 2.5s ease-in-out;
+-o-transition: background 2.5s ease-in-out;	
+	
+}
+h1#logo span{
+font-family: 'Quintessential', cursive;
+font-size:24px;
+position:relative;
+top:18px;
+left:10px;
+}
+
+.top-bar{
+	height:80px;
+}
+a.fb{
+.imagebg("../images/fb.png",left center,#888888,24px,72px,22px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+a.fb:hover{
+.imagebg("../images/fbh.png",left center,#3b5898,24px,72px,22px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+a.email{
+.imagebg("../images/email.png",left center,#888888,24px,72px,17px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+a.email:hover{
+.imagebg("../images/emailh.png",left center,#e46464,24px,72px,17px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+a.feed{
+.imagebg("../images/feed.png",left center,#888888,24px,72px,17px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+a.feed:hover{
+.imagebg("../images/feedh.png",left center,#f26109,24px,72px,17px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+
+a.tw{
+.imagebg("../images/twitter.png",left center,#888888,24px,72px,22px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+a.tw:hover{
+.imagebg("../images/twitterh.png",left center,#00acee,24px,72px,22px 0 0 78px);
+font-style: italic;
+font-size: 22px;
+font-family: 'Rambla', sans-serif;
+}
+.top-bar ul > li h1 a:not(.button){
+	font-weight:700;
+	font-size:22px !important;
+	color:@red;
+}
+#center_top {
+	width:960px;
+	margin:0 auto;
+	}
+
+}

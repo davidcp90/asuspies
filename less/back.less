@@ -1,0 +1,58 @@
+//imports
+@import "http://fonts.googleapis.com/css?family=Rambla:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700";
+@import "http://fonts.googleapis.com/css?family=Quintessential";
+//font-family: 'Libre Baskerville', serif;
+//color scheme
+//@beige:#E8E2D9;
+@beige:#F0EAE0;
+@red:#B13F3A;
+@green:#A9B18D;
+@swhite:#FFFDFF;
+@blue:#6A7689;
+@bluep:#3989b1;
+@orangep:#b17339;
+@purplep:#b1397b;
+@greenp:#39b14b;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rambla', sans-serif;
+}
+.effect(@property,@time,@type){
+    transition:@property @time @type;
+-moz-transition:@property @time @type; /* Firefox 4 */
+-webkit-transition:@property @time @type; /* Safari and Chrome */
+-o-transition:@property @time @type; /* Opera */
+}
+//mixins
+.imagebg(@imagen,@position,@color,@size,@height,@pad){
+    background: url(@imagen) no-repeat scroll @position transparent;
+    color: @color;
+    display: inline-block;
+    float: left;
+    .effect(background,2.5s,ease-in);
+    .effect(color,1s,ease-out);
+    font-size: @size;
+    height: @height;
+    padding: @pad;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+//rules
+body{
+    background:@swhite;
+    font-family: 'Rambla', sans-serif;
+    
+}
+#wrongpass{
+    display:none;
+}
+#dashboard a{
+    position:relative;
+    opacity:1;
+    .effect(all,0.5s,ease-in);
+}
+#dashboard a:hover{
+    opacity:0.8;
+    top:-5px;
+}
