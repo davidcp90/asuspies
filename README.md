@@ -1,3 +1,2 @@
 # asuspies
-Asuspies repository
-Codeigniter
+Church app
